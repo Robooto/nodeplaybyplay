@@ -1,0 +1,38 @@
+
+
+Create express routes
+
+const cats = require('./cats.js')(app);
+
+module.exports = function(app) {
+    let _cats = [];
+    
+    /* Create */
+    app.post('/cat', function(req, res) {
+        _cats.push(req.body);
+        res.json({info: 'cat created successfully'});
+    });
+}
+
+@5/4/2016
+
+mongoose create schemas for items
+
+Import mongoose schemas use capitals since it is a 'class' like item
+
+
+mongo commands
+
+show dbs - show databases
+
+use {db name}
+
+show collections - show collections
+
+npm install - forever --- Running multiple node servers to do different things
+
+forever start {nodefile}  allows process to run in the background
+
+forever list
+
+forever stopall
