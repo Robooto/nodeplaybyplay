@@ -36,3 +36,8 @@ forever start {nodefile}  allows process to run in the background
 forever list
 
 forever stopall
+
+
+redis strats
+
+Think about type of data for redis and how long you want to cache it.  How many requests per second / hour /day.
